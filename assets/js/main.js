@@ -203,18 +203,10 @@ function addBoxShadow(){
 
 function toggleScrollTop(){
     window.scrollY > 500 ? scrollTopBtn.classList.add('show') : scrollTopBtn.classList.remove('show')
-    // window.matchMedia("(min-width: 1023px)").matches ?? scrollTopBtn.style.bottom = '-4rem'
-    // if (window.scrollY > 500){
-    //     scrollTopBtn.classList.add('show')
-    //     window.matchMedia("(min-width: 1023px)").matches ? scrollTopBtn.style.bottom = '-4rem' : scrollTopBtn.style.bottom = '0' 
-    // } else {
-    //     scrollTopBtn.classList.remove('show')
-    // }
 
     if (window.matchMedia("(min-width: 1023px)").matches) {
         scrollTopBtn.style.bottom = '-4rem'
-        // window.scrollY > 500 ? scrollTopBtn.classList.add('show') : scrollTopBtn.classList.remove('show')
-    }
+    } else scrollTopBtn.style.bottom = '0'
 }
 
 window.onscroll = (e) => {
@@ -231,11 +223,10 @@ scrollTopBtn.addEventListener('click', () => {
     window.screenY = 0
 })
 
-// var x = window.matchMedia("(min-width: 700px)")
-// console.log("x", x)
-// function toggleScrollTop(){
+if (window.matchMedia("(min-width: 1023px)").matches) {
+    scrollTopBtn.style.bottom = '-4rem'
+}
 
-// }
 
 
 
