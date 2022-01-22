@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Responsive Portfolio</title>
+</head>
+<body class="">
+    <div id="root">
+    
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <a href="" class="nav__logo">Alexa</a>
+                <div class="nav__options">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__item-link active">
+                                <i class="uil uil-estate nav__item-icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__item-link">
+                                <i class="uil uil-user nav__item-icon"></i> About                 
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__item-link">
+                                <i class="uil uil-file nav__item-icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__item-link">
+                                <i class="uil uil-suitcase nav__item-icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__item-link">
+                                <i class="uil uil-scenery nav__item-icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__item-link">
+                                <i class="uil uil-message nav__item-icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close-icon" id="nav-close-btn"></i>
+                </div>
+                <div class="nav__btns">
+                    <div class="nav__theme-btn ">
+                        <i class="uil uil-sun nav__theme-icon nav__theme-icon-light"></i>
+                        <i class="uil uil-moon nav__theme-icon nav__theme-icon-dark"></i>
+                    </div>
+                    <div class="nav__toggle-btn" id="nav-toggle-btn">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- content -->
+        <div class="content">
+
+            <!-- home -->
+            <section class="section home" id="home">
+                <div class="home__container grid wide">
+                    <div class="home__content row">
+                        <div class="home__social col c-2 m-2 l-2">
+                            <ul class="home__social-list">
+                                <li class="home__social-item">
+                                    <a href="https://www.linkedin.com/" class="home__social-link">
+                                        <i class="uil uil-linkedin-alt home__social-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="home__social-item">
+                                    <a href="https://dribbble.com/" class="home__social-link">
+                                        <i class="uil uil-dribbble home__social-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="home__social-item">
+                                    <a href="https://www.github.com/" class="home__social-link">
+                                        <i class="uil uil-github-alt home__social-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home__avatar  col c-9 m-6 l-5">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    
+                                    <image class="home__blob-img" x="12" y="18" href="./assets/img/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__info  col c-12 m-4 l-5">
+                            <h1 class="section__title home__title">Hi, I'm Alexa</h1>
+                            <h3 class="section__sub-title home__sub-title">Frontend Development</h3>
+                            <p class="home__description">High level experience in web design and development knowledge, producing quality work.</p>
+                            <a href="#contact" class="btn home__btn">
+                                Contact Me
+                                <i class="uil uil-message btn__icon home__btn-icon"></i>
+                            </a>
+                            <a href="#about" class="home__scroll">
+                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                Scroll down
+                                <i class="uil uil-arrow-down home__scroll-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about me -->
+            <section class="about section" id="about">
+                <h1 class="section__title about__title">About Me</h1>
+                <h3 class="section__subtitle about__subtitle">My introduction</h3>            
+
+                <div class="about__container grid wide">
+                    <div class="about__content row">
+                        <div class="about__img-wrap col l-5 l-o-1 m-8 m-o-2 c-8 c-o-2 ">
+                            <div class="about__img"></div>
+                        </div>
+                        <div class="about__info col c-12 m-12 l-6">
+                            <p class="about__description">
+                                Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.
+                            </p>
+                            <div class="about__exp">
+                                <div class="about_exp-item">
+                                    <span class="about__exp-title">
+                                        08+
+                                    </span>
+                                    <p class="about__exp-description">
+                                        Years <br> experience
+                                    </p>
+                                </div>
+                                <div class="about_exp-item">
+                                    <span class="about__exp-title">
+                                        20+
+                                    </span>
+                                    <p class="about__exp-description">
+                                        Completed <br> project
+                                    </p>
+                                </div>
+                                <div class="about_exp-item">
+                                    <span class="about__exp-title">
+                                        05+
+                                    </span>
+                                    <p class="about__exp-description">
+                                        Companies <br> worked
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./assets/pdf/Alexa-Cv.pdf" download="" class="btn about__btn">
+                                Download CV
+                                <i class="uil uil-download-alt about__btn-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section class="skills section" id="skills">
+                <div class="grid wide">
+                    <h1 class="section__title skills__title">Skills</h1>
+                <h3 class="section__subtitle skills__subtitle">My technicals level</h3>
+                <div class="skills__list row">
+                    <div class="skill__item col c-12 m-6 l-6">
+                        <div class="skill__header">
+                            <i class="uil uil-brackets-curly skill__header-logo-icon"></i>
+                            <div class="skill__header-info">
+                                <h3 class="skill__header-info-name">Frontend developer</h3>
+                                <p class="skill__header-info-subname">More than 4 years</p>
+                            </div>
+                            <i class="uil uil-angle-down skill__header-arrow-icon"></i>
+                        </div>
+                        <div class="skill__description-wrap">
+                            <div class="skill__description">
+                                <ul class="skill__tech-list">
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">HTML</span>
+                                            <span class="skill__tech-percent-data">90%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__HTML-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">CSS</span>
+                                            <span class="skill__tech-percent-data">85%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__css-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Javascript</span>
+                                            <span class="skill__tech-percent-data">80%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__js-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">React</span>
+                                            <span class="skill__tech-percent-data">75%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__react-percent"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill__item col c-12 m-6 l-6">
+                        <div class="skill__header">
+                            <i class="uil uil-brackets-curly skill__header-logo-icon"></i>
+                            <div class="skill__header-info">
+                                <h3 class="skill__header-info-name">Backend developer</h3>
+                                <p class="skill__header-info-subname">More than 2 years</p>
+                            </div>
+                            <i class="uil uil-angle-down skill__header-arrow-icon"></i>
+                        </div>
+                        <div class="skill__description-wrap">
+                            <div class="skill__description">
+                                <ul class="skill__tech-list">
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">PHP</span>
+                                            <span class="skill__tech-percent-data">80%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__php-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Node Js</span>
+                                            <span class="skill__tech-percent-data">70%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__nodejs-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Firebase</span>
+                                            <span class="skill__tech-percent-data">75%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__firebase-percent"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill__item col c-12 m-6 l-6">
+                        <div class="skill__header">
+                            <i class="uil uil-brackets-curly skill__header-logo-icon"></i>
+                            <div class="skill__header-info">
+                                <h3 class="skill__header-info-name">Design</h3>
+                                <p class="skill__header-info-subname ">More than 1 years</p>
+                            </div>
+                            <i class="uil uil-angle-down skill__header-arrow-icon"></i>
+                        </div>
+                        <div class="skill__description-wrap">
+                            <div class="skill__description">
+                                <ul class="skill__tech-list">
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Figma</span>
+                                            <span class="skill__tech-percent-data">80%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__figma-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Sketch</span>
+                                            <span class="skill__tech-percent-data">70%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__sketch-percent"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill__tech-item">
+                                        <div class="skill__tech-item-header">
+                                            <span class="skill__tech-name">Photoshop</span>
+                                            <span class="skill__tech-percent-data">75%</span>
+                                        </div>
+                                        <div class="skill__tech-fullpercent">
+                                            <div class="skill__tech-percent skill__photoshop-percent"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- qualifications -->
+            <section class="qualifications section" id="qualifications">
+                <div class="grid wide">
+                    <h1 class="section__title">Qualifications</h1>
+                    <h3 class="section__subtitle">My personal journey</h3>
+                    <div class="qlc__tab-list">
+                        <div class="qlc__tab-item active" data-index="1">
+                            <i class="uil uil-graduation-cap qlc__tab-item-icon"></i>
+                            Education
+                        </div>
+                        <div class="qlc__tab-item" data-index="2">
+                            <i class="uil uil-suitcase qlc__tab-item-icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qlc__list row active" data-index="1">
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">Computer Engineer</h3>
+                            <p class="qlc__item-subheader">HUST - University</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">Web Design</h3>
+                            <p class="qlc__item-subheader">Spain - Institude</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">Web Development</h3>
+                            <p class="qlc__item-subheader">HUST - University</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="qlc__list row" data-index="2">
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">Software Engineer</h3>
+                            <p class="qlc__item-subheader">Microsoft - VietNam</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">Frontend Development</h3>
+                            <p class="qlc__item-subheader">FPT - VietNam</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        <div class="qlc__item col c-6 m-5 m-o-1 l-4 l-o-2">
+                            <h3 class="qlc__item-header">UI Design</h3>
+                            <p class="qlc__item-subheader">Figma - Spain</p>
+                            <div class="qlc__item-time">
+                                <i class="uil uil-calendar-alt qlc__item-time-icon"></i>
+                                2019 - 2024
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- services -->
+            <section class="section services" id="services">
+                <div class="grid wide">
+                    <h1 class="section__title">Services</h1>
+                    <h3 class="section__subtitle">What i offer</h3>
+                    <div class="service__list row">
+                        <div class="service__item col c-6 m-6 l-6">
+                            <div class="service__item-content">
+                                <i class="uil uil-web-grid service__item-icon"></i>
+                                <h3 class="service__item-header">Ui/Ux <br> Designer</h3>
+                                <div class="btn service__item-btn">
+                                    <span class="service__item-btn-text">View More</span>
+                                    <i class="uil uil-arrow-right service__item-btn-icon"></i>
+                                </div>
+                            </div>
+                            <div class="service__item-modal">
+                                <div class="service__item-modal-wrap">
+                                    <div class="service__item-modal-content">
+                                        <h3 class="service__modal-header">
+                                            Ui/Ux <br> Designer
+                                        </h3>
+                                        <i class="uil uil-times service__modal-header-icon"></i>
+                                        <ul class="service__modal-list">
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I develop the user interface.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                Web page development.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I create ux element interactions.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I position your company brand.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__item col c-6 m-6 l-6">
+                            <div class="service__item-content">
+                                <i class="uil uil-web-grid service__item-icon"></i>
+                                <h3 class="service__item-header">Frontend <br> Developer</h3>
+                                <div class="btn service__item-btn">
+                                    <span class="service__item-btn-text">View More</span>
+                                    <i class="uil uil-arrow-right service__item-btn-icon"></i>
+                                </div>
+                            </div>
+                            <div class="service__item-modal">
+                                <div class="service__item-modal-wrap">
+                                    <div class="service__item-modal-content">
+                                        <h3 class="service__modal-header">
+                                            Frontend <br> Developer
+                                        </h3>
+                                        <i class="uil uil-times service__modal-header-icon"></i>
+                                        <ul class="service__modal-list">
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I develop the user interface.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                Web page development.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I create ux element interactions.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I position your company brand.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__item col c-6 m-6 l-6">
+                            <div class="service__item-content">
+                                <i class="uil uil-web-grid service__item-icon"></i>
+                                <h3 class="service__item-header">Branding <br> Design</h3>
+                                <div class="btn service__item-btn">
+                                    <span class="service__item-btn-text">View More</span>
+                                    <i class="uil uil-arrow-right service__item-btn-icon"></i>
+                                </div>
+                            </div>
+                            <div class="service__item-modal">
+                                <div class="service__item-modal-wrap">
+                                    <div class="service__item-modal-content">
+                                        <h3 class="service__modal-header">
+                                            Branding <br> Design
+                                        </h3>
+                                        <i class="uil uil-times service__modal-header-icon"></i>
+                                        <ul class="service__modal-list">
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I develop the user interface.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                Web page development.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I create ux element interactions.
+                                            </li>
+                                            <li class="service__modal-item">
+                                                <i class="uil uil-check-circle service__modal-item-icon"></i>
+                                                I position your company brand.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- portfolio -->
+            <section class="section portfolio" id="portfolio">
+                <h1 class="section__title">Portfolio</h1>
+                <h3 class="section__subtitle">Most recent work</h3>
+                <div class="pfl__container swiper">
+                    <div class="pfl__list swiper-wrapper">
+                        <div class="pfl__item swiper-slide">
+                            <div class="row">
+                                <div class="col c-12 m-6 l-6">
+                                    <img class="pfl__item-img" src="./assets/img/portfolio1.jpg" alt="">
+                                </div>
+                                <div class="col c-12 m-6 l-6">
+                                    <h3 class="pfl__item-header">Mordern Website</h3>
+                                    <p class="pfl__item-desc">Website adaptable to all devices, with ui components and animated interactions.</p>
+                                    <a href="#" class="btn pfl__item-btn">
+                                        Demo
+                                        <i class="uil uil-arrow-right pfl__item-btn-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pfl__item swiper-slide">
+                            <div class="row">
+                                <div class="col c-12 m-6 l-6">
+                                    <img class="pfl__item-img" src="./assets/img/portfolio2.jpg" alt="">
+                                </div>
+                                <div class="col c-12 m-6 l-6">
+                                    <h3 class="pfl__item-header">Mordern Website</h3>
+                                    <p class="pfl__item-desc">Website adaptable to all devices, with ui components and animated interactions.</p>
+                                    <a href="#" class="btn pfl__item-btn">
+                                        Demo
+                                        <i class="uil uil-arrow-right pfl__item-btn-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pfl__item swiper-slide">
+                            <div class="row">
+                                <div class="col c-12 m-6 l-6">
+                                    <img class="pfl__item-img" src="./assets/img/portfolio3.jpg" alt="">
+                                </div>
+                                <div class="col c-12 m-6 l-6">
+                                    <h3 class="pfl__item-header">Mordern Website</h3>
+                                    <p class="pfl__item-desc">Website adaptable to all devices, with ui components and animated interactions.</p>
+                                    <a href="#" class="btn pfl__item-btn">
+                                        Demo
+                                        <i class="uil uil-arrow-right pfl__item-btn-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add arrow -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b pfl__angle-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b pfl__angle-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+              
+                </div>
+            </section>
+
+
+            <!-- projects -->
+            <section class="projects section" id="projects">
+                <div class="prj__container grid wide">
+                    <div class="row">
+                        <div class="prj__infor col c-12 m-6 l-6">
+                            <h2 class="prj__header">You have a new project</h2>
+                            <p class="prj__desc">Contact me now and get a 30% discount on your new project.</p>
+                            <a href="#contact" class="btn prj__btn">
+                                Contact me
+                                <i class="uil uil-message prj__btn-icon"></i>
+                            </a>
+                        </div>
+                        <div class="prj__img-wrap col c-12 m-6 l-6">
+                            <img class="prj__img" src="./assets/img/project.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- testimonial -->
+            <section class="section testimonial" id="">
+                <div class="grid wide">
+                    <h1 class="section__title">Testimonial</h1>
+                    <h3 class="section__subtitle">My client saying</h3>
+                </div>
+                <div class="tmn__slide swiper">
+                    <div class="tmn__list swiper-wrapper">
+                        <div class="tmn__item swiper-slide">
+                            <div class="tmn__item-header">
+                                <img class="tmn__item-img" src="./assets/img/testimonial1.jpg" alt="">
+                                <div class="tmn__item-info">
+                                    <h3 class="tmn__item-info-header">Sara Smith</h3>
+                                    <p class="tmn__item-info-subheader">Client</p>
+                                </div>
+                                <div class="tmn__item-rate">
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                </div>
+                            </div>
+                            <p class="tmn__item-desc">
+                                I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
+                            </p>
+                        </div>
+                        <div class="tmn__item swiper-slide">
+                            <div class="tmn__item-header">
+                                <img class="tmn__item-img" src="./assets/img/testimonial2.jpg" alt="">
+                                <div class="tmn__item-info">
+                                    <h3 class="tmn__item-info-header">Matt Robinson</h3>
+                                    <p class="tmn__item-info-subheader">Client</p>
+                                </div>
+                                <div class="tmn__item-rate">
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                </div>
+                            </div>
+                            <p class="tmn__item-desc">
+                                I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
+                            </p>
+                        </div>
+                        <div class="tmn__item swiper-slide">
+                            <div class="tmn__item-header">
+                                <img class="tmn__item-img" src="./assets/img/testimonial3.jpg" alt="">
+                                <div class="tmn__item-info">
+                                    <h3 class="tmn__item-info-header">Raul Harris</h3>
+                                    <p class="tmn__item-info-subheader">Client</p>
+                                </div>
+                                <div class="tmn__item-rate">
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                    <i class="uis uis-star tmn__item-rate-icon"></i>
+                                </div>
+                            </div>
+                            <p class="tmn__item-desc">
+                                I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Add arrow -->
+                    <div class="swiper-button-next tmn__btn-arrow">
+                        <i class="uil uil-angle-right-b tmn__angle-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev tmn__btn-arrow">
+                        <i class="uil uil-angle-left-b tmn__angle-icon"></i>
+                    </div>           
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section contact" id="contact">
+                <h1 class="section__title">Contact Me</h1>
+                <h3 class="section__subtitle">Get in touch</h3>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="contact__info col c-12 m-6 l-6">
+                            <div class="contact__info-item">
+                                <i class="uil uil-phone contact__info-icon"></i>
+                                <div class="contact__info-content">
+                                    <h3 class="contact__info-header">Call me</h3>
+                                    <p class="contact__info-subheader">999-888-777</p>    
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <i class="uil uil-envelope-alt contact__info-icon"></i>
+                                <div class="contact__info-content">
+                                    <h3 class="contact__info-header">Email</h3>
+                                    <p class="contact__info-subheader">alexa@gmail.com</p>    
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <i class="uil uil-map-marker contact__info-icon"></i>
+                                <div class="contact__info-content">
+                                    <h3 class="contact__info-header">Location</h3>
+                                    <p class="contact__info-subheader">Hanoi - Vietnam</p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__form-wrap col c-12 m-6 l-6">
+                            <form action="#home" class="contact__form">
+                                <div class="row">
+                                    <div class="col c-12 m-12 l-6">
+                                        <div class="contact__input-block">
+                                        <label for="i-name" class="contact__block-label">Name</label>
+                                        <input type="text" name="" id="i-name" class="contact__block-input">
+                                        </div>
+                                    </div>
+                                    <div class="col c-12 m-12 l-6">
+                                        <div class="contact__input-block">
+                                        <label for="i-email" class="contact__block-label">Email</label>
+                                        <input type="email" name="" id="i-email" class="contact__block-input">
+                                        </div>
+                                    </div>
+                                    <div class="col c-12 m-12 l-12">
+                                        <div class="contact__input-block">
+                                        <label for="i-project" class="contact__block-label">Project</label>
+                                        <input type="text" name="" id="i-project" class="contact__block-input">
+                                        </div>
+                                    </div>
+                                    <div class="col c-12 m-12 l-12">
+                                        <div class="contact__input-block">
+                                        <label for="i-message" class="contact__block-label">Message</label>
+                                        <textarea name="" id="i-message" cols="0" rows="7" class="contact__block-input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn contact__form-btn">
+                                    Send message
+                                    <i class="uil uil-message contact__form-btn-icon"></i>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <section class="footer section">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="footer__header col c-12 m-6 l-6">
+                            <h2 class="section__title footer__title">Alexa</h2>
+                            <p class="section__subtitle footer__subtitle">Frontend Developer</p>
+                        </div>
+                        <div class="footer__link col c-12 m-6 l-6">
+                            <a href="#services" class="footer__link-item">Services</a>
+                            <a href="#portfolio" class="footer__link-item">Portfolio</a>
+                            <a href="#contact" class="footer__link-item">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <i class="uil uil-facebook-f footer__social-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer__social-link">
+                            <i class="uil uil-instagram footer__social-icon"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="footer__social-link">
+                            <i class="uil uil-twitter-alt footer__social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copyright">
+                    &copy;HUST. All rights reserved.
+                </p>
+            </section>
+
+
+            <!-- scroll top btn -->
+            <a href="#home" class="btn scrollTopBtn">
+                <i class="uil uil-arrow-up scrollTopBtn__icon"></i>
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
